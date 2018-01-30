@@ -5,6 +5,11 @@
 	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
 	<style type="text/css">
+	@media (min-width: 1550px) {
+		.productInfo {
+			margin-left: 700px !important;
+		}
+	}
 	.cf:after {
 		content: "";
 		display: table;
@@ -60,7 +65,7 @@
 	}
 	.navlink {
 		display: inline-block;
-		width: 200px;
+		width: 175px;
 		background: url(http://baggercentral.com/static/frontend/Smartwave/porto_child/en_US/images/top-menu-bg.png) top left repeat !important;
 		text-align: center;
 		height:46px;
@@ -111,7 +116,8 @@
 		margin-top: 20px;
 	}
 	.productIMG {
-		width: 35%;
+		width: 50%;
+		max-width: 700px;
 		float:left;
 		-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 10px 50px, rgba(0, 0, 0, 0.3) 0 10px 40px, rgba(0, 0, 0, 0.3) 0 10px 30px;
 	}
@@ -119,18 +125,12 @@
 		display: none;
 		position: absolute;
 		top: 46px;
-		left: 200px;
+		left: 175px;
 		text-decoration: none;
 		color: #913C3C;
-		width: 400px;
+		width: 350px;
 		text-align: left;
 		background-color: #F2F2F2;
-		opacity: 0.0;
-		-webkit-transition: all 250ms ease-in-out;
-		-moz-transition: all 250ms ease-in-out;
-		-ms-transition: all 250ms ease-in-out;
-		-o-transition: all 250ms ease-in-out;
-		transition: all 250ms ease-in-out;
 	}
 	.dropdown a {
 		padding-left: 5px;
@@ -147,16 +147,14 @@
 	}
 
 	.dropdown:hover {
-		opacity: 1.0;
 		display: block;
 	}
 	.hoverA:hover + .dropdown {
-		opacity: 1.0;
 		display: block;
 	}
 	.productInfo {
 		padding-left: 10px;
-		margin-left: 36%;
+		margin-left: 50%;
 	}
 	h1 {
 		margin-top: 0;
@@ -168,7 +166,6 @@
 	.fr {
 		float: right;
 	}
-
 	</style>
 </head>
 
