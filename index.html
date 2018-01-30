@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+	<style type="text/css">
+	.cf:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	body {
+		margin: 0;
+		padding: 0;
+	}
+	*{
+		box-sizing: border-box;
+	}
+	.header	{
+		
+/*		background-repeat: no-repeat;*/
+		width: 100%;
+	}
+	.headerTop {
+		background: url(http://baggercentral.com/media/porto/header_bg/default/banner-bg-wide.jpg);
+		background-size: 100% 100%;
+		padding-top: 15px;
+		height: 120px;
+	}
+	.logo {
+		margin-top: 20px;
+		margin-left: 5%;
+		display: inline-block;
+	}
+	.searchForm {
+		display: inline-block;
+	}
+	.searchWrap {
+		width: 300px;
+		height: 40px;
+	}
+	.navWrap {
+		width: 100%;
+		color: white;
+		    background: url(http://baggercentral.com/static/frontend/Smartwave/porto_child/en_US/images/topbg.png) top left repeat !important;
+		    height: 46px;
+	}
+	.mainNav {
+		font-family: 'Nunito', sans-serif;
+		font-weight: 700;
+		font-size: 15px;
+		position: relative;
+		top: -9px;
+		width: 95%;
+		left: 5%;
+	}
+	.mainNav div {
+		display: inline-block;
+	}
+	.navlink {
+		display: inline-block;
+		width: 200px;
+		background: url(http://baggercentral.com/static/frontend/Smartwave/porto_child/en_US/images/top-menu-bg.png) top left repeat !important;
+		text-align: center;
+		height:46px;
+		text-decoration: none;
+		color: white;
+		padding: 0 12px;
+		line-height: 46px;
+	    -webkit-filter: brightness(100%);
+		-moz-filter: brightness(100%);
+		-o-filter: brightness(100%);
+		-ms-filter: brightness(100%);
+		filter: brightness(100%);
+	}
+	.navlink:hover {
+		-webkit-filter: brightness(80%);
+		-moz-filter: brightness(80%);
+		-o-filter: brightness(80%);
+		-ms-filter: brightness(80%);
+		filter: brightness(80%);
+	}
+	.afterNav, .beforeNav {
+		width: 13px;
+		height: 46px;
+		display: inline-block;
+	}
+	.mainNav:before {
+		margin: 0;
+		padding: 0;
+		position: absolute;
+		left: -8px;
+		width: 13px;
+		height: 46px;
+		background: url(http://baggercentral.com/static/frontend/Smartwave/porto_child/en_US/images/topleftmenubg.png) left top no-repeat;
+		content: ' ';
+	}
+	.mainNav:after {
+		margin: 0;
+		padding: 0;
+		position: absolute;
+		width: 13px;
+		height: 46px;
+		background: url(http://baggercentral.com/static/frontend/Smartwave/porto_child/en_US/images/toprightmenubg.png) left top no-repeat;
+		content: ' ';
+	}
+	.body {
+		margin-left: 5%;
+		width: 90%;
+		margin-top: 20px;
+	}
+	.productIMG {
+		width: 35%;
+		float:left;
+		-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 10px 50px, rgba(0, 0, 0, 0.3) 0 10px 40px, rgba(0, 0, 0, 0.3) 0 10px 30px;
+	}
+	.dropdown {
+		display: none;
+		position: absolute;
+		top: 46px;
+		left: 200px;
+		text-decoration: none;
+		color: #913C3C;
+		width: 400px;
+		text-align: left;
+		background-color: #F2F2F2;
+		opacity: 0.0;
+		-webkit-transition: all 250ms ease-in-out;
+		-moz-transition: all 250ms ease-in-out;
+		-ms-transition: all 250ms ease-in-out;
+		-o-transition: all 250ms ease-in-out;
+		transition: all 250ms ease-in-out;
+	}
+	.dropdown a {
+		padding-left: 5px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		text-decoration: none;
+		color: #913C3C;
+		display: block;
+		width: 100%;
+		text-align: left;
+	}
+	.dropdown a:hover {
+		background-color: #818C8C;
+	}
+
+	.dropdown:hover {
+		opacity: 1.0;
+		display: block;
+	}
+	.hoverA:hover + .dropdown {
+		opacity: 1.0;
+		display: block;
+	}
+	.productInfo {
+		padding-left: 10px;
+		margin-left: 36%;
+	}
+	h1 {
+		margin-top: 0;
+		background: grey;
+	}
+	h2 {
+		font-family: 'Nunito', sans-serif;
+	}
+	.fr {
+		float: right;
+	}
+
+	</style>
+</head>
+
+
+<body>
+	<div class="header">
+		<div class="headerTop">
+			<img class="logo" src="http://baggercentral.com/media/logo/stores/1/WanaRyd_logo.png" alt="">
+			<div class="searchForm">
+				<form name="Search" method="get" action="https://stores.ebay.com/WanaRyd/_i.html">
+					<table>
+						<tbody>
+							<tr class="searchWrap">
+								<td class="searchBox">
+									<input type="text" id="v4-1" value="" name="_nkw" size="13" maxlength="300">
+								</td>
+								<td class="submitBox">
+									<input type="submit" name="submit" value="Search">
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</form>
+			</div>
+
+		</div>
+		<div class="navWrap">
+			<nav class="mainNav"><!-- 
+				 --><a class="navlink" href="http://stores.ebay.com/WanaRyd">STORE HOME</a><!-- 
+				 --><div>
+				 		<a class="navlink hoverA" href="http://stores.ebay.com/WanaRyd/About-Us.html">ALL PRODUCTS</a>
+				 		<nav class="dropdown">
+				 			<a href="http://stores.ebay.com/WanaRyd/Wheels-by-Bike-/_i.html?_fsub=2&_sid=120212033&_trksid=p4634.c0.m322">WHEELS</a>
+							<a href="http://stores.ebay.com/WanaRyd/Bodywork-/_i.html?_fsub=3871076013&_sid=120212033&_trksid=p4634.c0.m322">BODYWORK</a>
+							<a href="http://stores.ebay.com/WanaRyd/Brakes-/_i.html?_fsub=1386765013&_sid=120212033&_trksid=p4634.c0.m322">BRAKES</a>
+							<a href="http://stores.ebay.com/WanaRyd/Covers-Caps-/_i.html?_fsub=3871077013&_sid=120212033&_trksid=p4634.c0.m322">COVERS &amp; CAPS</a>
+							<a href="http://stores.ebay.com/WanaRyd/Exhaust-/_i.html?_fsub=2142120013&_sid=120212033&_trksid=p4634.c0.m322">EXHAUST</a>
+							<a href="http://stores.ebay.com/WanaRyd/Handlebars-Controls-Mirrors-/_i.html?_fsub=3871078013&_sid=120212033&_trksid=p4634.c0.m322">HANDLEBARS &amp; CONTROLS</a>
+							<a href="http://stores.ebay.com/WanaRyd/Intakes-Air-Cleaners-/_i.html?_fsub=3871079013&_sid=120212033&_trksid=p4634.c0.m322">INTAKES &amp; AIR CLEANERS</a>
+							<a href="http://stores.ebay.com/WanaRyd/Lighting-License-Plates-/_i.html?_fsub=3871080013&_sid=120212033&_trksid=p4634.c0.m322">LIGHTING &amp; LICENSE PLATES</a>
+							<a href="http://stores.ebay.com/WanaRyd/Saddlebags-Luggage-/_i.html?_fsub=3871084013&_sid=120212033&_trksid=p4634.c0.m322">SADDLEBAGS &amp; LUGGAGE</a>
+							<a href="http://stores.ebay.com/WanaRyd/Seats-Backrests-/_i.html?_fsub=3871085013&_sid=120212033&_trksid=p4634.c0.m322">SEATS &amp; BACKRESTS</a>
+							<a href="http://stores.ebay.com/WanaRyd/Suspension-/_i.html?_fsub=1386705013&_sid=120212033&_trksid=p4634.c0.m322">SUSPENSION</a>
+							<a href="http://stores.ebay.com/WanaRyd/Tires-Tire-Repair-/_i.html?_fsub=3871086013&_sid=120212033&_trksid=p4634.c0.m322">TIRES &amp; TIRE REPAIR</a>
+				 		</nav>
+				 	</div><!-- 
+				--><a class="navlink" href="http://stores.ebay.com/WanaRyd/Contact-Us.html">CONTACT US</a><!-- 
+				--><a class="navlink" href="http://stores.ebay.com/WanaRyd/About-Us.html">ABOUT US</a>
+			</nav>
+		</div>
+	</div>
+
+	<div class="body cf">
+		<img class="productIMG" src="http://www.wanaryd.com//images/detailed/53/139054_adrenaline1360790498511c03e2760df.jpg" alt="hi">
+		<div class="productInfo">
+			<h1>$ebay_title<br><!-- $supplier  --><img class="fr" src="http://wanaryd.com/suppliers/wanaryd.png" alt=""></h1>
+			<p>MANUFACTURER PART # $product[product_code] $drag_part_num | $stockline</p>
+
+			<h2>ITEMS INCLUDED</h2>
+			<p>$product[short_description]</p>
+
+			<h2>ITEM INFORMATION</h2>
+			<p>$product[full_description] $full_description_pre</p>
+
+			<p>$biketxt</p>
+
+		</div>
+	</div>
+
+</body>
+</html>
