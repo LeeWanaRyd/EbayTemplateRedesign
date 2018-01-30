@@ -18,6 +18,8 @@
 	body {
 		margin: 0;
 		padding: 0;
+		background: #333 url(http://andersonsoftworks.com/resources/background.png) repeat;
+		color: white;
 	}
 	*{
 		box-sizing: border-box;
@@ -120,6 +122,7 @@
 		max-width: 700px;
 		float:left;
 		-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 10px 50px, rgba(0, 0, 0, 0.3) 0 10px 40px, rgba(0, 0, 0, 0.3) 0 10px 30px;
+		border-radius: 25px;
 	}
 	.dropdown {
 		display: none;
@@ -130,14 +133,16 @@
 		color: #913C3C;
 		width: 350px;
 		text-align: left;
-		background-color: #F2F2F2;
+		/*background-color: #F2F2F2;*/
+		background: url(http://baggercentral.com/static/frontend/Smartwave/porto_child/en_US/images/top-menu-bg.png) top left repeat !important;
 	}
 	.dropdown a {
 		padding-left: 5px;
 		padding-top: 5px;
 		padding-bottom: 5px;
 		text-decoration: none;
-		color: #913C3C;
+		/*color: #913C3C;*/
+		color: white;
 		display: block;
 		width: 100%;
 		text-align: left;
@@ -152,19 +157,40 @@
 	.hoverA:hover + .dropdown {
 		display: block;
 	}
+	.dropdown:hover + .navlink {
+		-webkit-filter: brightness(80%);
+		-moz-filter: brightness(80%);
+		-o-filter: brightness(80%);
+		-ms-filter: brightness(80%);
+		filter: brightness(80%);
+	}
 	.productInfo {
-		padding-left: 10px;
+		padding-left: 20px;
 		margin-left: 50%;
 	}
 	h1 {
 		margin-top: 0;
-		background: grey;
 	}
 	h2 {
 		font-family: 'Nunito', sans-serif;
 	}
 	.fr {
 		float: right;
+/*		-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 10px 50px, rgba(0, 0, 0, 0.3) 0 10px 40px, rgba(0, 0, 0, 0.3) 0 10px 30px;
+*/		border-radius: 25px;
+	}
+	.footer {
+		display: none;
+		margin-top: 50px;
+		width: 100%;
+		min-height:500px;
+		background-color: rgba(10, 10, 10, 0.4);
+	}
+	.body {
+		background: rgba(63, 70, 87, 0.4);
+		-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 10px 50px, rgba(0, 0, 0, 0.3) 0 10px 40px, rgba(0, 0, 0, 0.3) 0 10px 30px;
+		padding: 25px;
+		border-radius: 25px;
 	}
 	</style>
 </head>
@@ -227,12 +253,38 @@
 			<h2>ITEMS INCLUDED</h2>
 			<p>$product[short_description]</p>
 
-			<h2>ITEM INFORMATION</h2>
-			<p>$product[full_description] $full_description_pre</p>
+			<p style="padding-left:24px;">
+	<h3 style='font-size:16px'>Bike Fitment</h3><p style='padding-left:24px'><strong>Harley Davidson Touring:</strong><br>Electra Glide Classic FLHTC 2008-13<br>Electra Glide Standard FLHT 2008-09<br>Electra Glide Ultra Limited FLHTK 2010<br>Road Glide Custom FLTRX 2010-13<br>Road Glide Custom Screamin Eagle FLTRXSE 2012<br>Road Glide Custom Screamin Eagle FLTRXSE2 2013<br>Road Glide FLTR 2008-09<br>Road Glide Screamin Eagle FLTRSE3 2009<br>Road Glide Ultra FLTRU 2011-13<br>Road Glide Ultra Screamin Eagle FLTRUSE 2011<br>Road King Classic FLHRC 2008-12<br>Road king Classic FLHRC 2013<br>Road King FLHR 2008-12<br>Road king FLHR 2013<br>Road King Screamin Eagle FLHRSE4 2008<br>Road King Screamin Eagle FLHRSE5 2013<br>Street Glide FLHX 2008-13<br>Street Glide Screamin Eagle FLHXSE 2010<br>Street Glide Screamin Eagle FLHXSE2 2011<br>Street Glide Screamin Eagle FLHXSE3 2012<br>Ultra/Electra FLHTCU 2008-13<br>Ultra/Electra Limited FLHTK 2011-13<br>Ultra/Electra Screamin Eagle FLHTCUSE3 2008<br>Ultra/Electra Screamin Eagle FLHTCUSE4 2009<br>Ultra/Electra Screamin Eagle FLHTCUSE5 2010<br>Ultra/Electra Screamin Eagle FLHTCUSE6 2011<br>Ultra/Electra Screamin Eagle FLHTCUSE7 2012<br>
 
-			<p>$biketxt</p>
+</p></p>
 
 		</div>
+	</div>
+	<div class="footer">
+		<div style="color: #5e5e5e; font-size: 14px; font-family: Tahoma, Geneva, sans-serif;">
+			<img style="margin-top: 10px; margin-bottom: 0px;" src="https://wanaryd.com/images/eBay-html/item_information.jpg" alt="" width="471" height="33" />
+				<p><img src="https://wanaryd.com/images/dyna-beads.jpg" alt="" width="474" height="81" /></p>
+			<p><a href="mailto:sales@wanaryd.com?subject=eBay Inquiry on wheels"><img src="https://wanaryd.com/images/free-t-shirt.jpg" alt="" width="474" height="81" /></a></p>
+			<p><a href="https://wanaryd.com/about-wanaryd-motorcycle.html"><img src="https://wanaryd.com/images/12-years.jpg" alt="" width="474" height="81" /></a></p>
+				
+						<p>
+						<span style="font-size: medium;">
+							<strong>WHY WANA-RYD?</strong>
+						</span>
+						<br>
+						<span style="font-size: small;">
+							Best Customer Service! Best Pricing! Free U.S. Shipping! Great Warranties! We take time with our customers!
+						</span>
+						</p>
+
+						<p>
+						<span style="font-size: small;">
+							Call us at 1-888-926-2793 or 
+							<strong><a href="mailto:sales@wanaryd.com">E-mail Us HERE</a>!</strong>
+						</span>
+						</p>
+					
+			</div>
 	</div>
 
 </body>
