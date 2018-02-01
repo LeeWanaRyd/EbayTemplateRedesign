@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
 	<style type="text/css">
@@ -39,7 +40,6 @@
 		height: 40px;
 	}
 	.navWrap {
-		text-align: center;
 		width: 100%;
 		color: white;
 		    background: url(http://baggercentral.com/static/frontend/Smartwave/porto_child/en_US/images/topbg.png) top left repeat !important;
@@ -52,13 +52,14 @@
 		position: relative;
 		top: -9px;
 		width: 95%;
+		left: 5%;
 	}
 	.mainNav div {
 		display: inline-block;
 	}
 	.navlink {
 		display: inline-block;
-		width: 175px;
+		width: 150px;
 		background: url(http://baggercentral.com/static/frontend/Smartwave/porto_child/en_US/images/top-menu-bg.png) top left repeat !important;
 		text-align: center;
 		height:46px;
@@ -107,9 +108,11 @@
 		margin: 0 auto;
 		width: 90%;
 		margin-top: 20px;
+		max-width: 1000px;
 	}
 	.productIMG {
-		width: 50%;
+		width: 40%;
+		margin-right: 5%;
 		max-width: 700px;
 		float:left;
 		-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 10px 50px, rgba(0, 0, 0, 0.3) 0 10px 40px, rgba(0, 0, 0, 0.3) 0 10px 30px;
@@ -119,9 +122,10 @@
 		display: none;
 		position: absolute;
 		top: 46px;
+		left: 150px;
 		text-decoration: none;
 		color: #913C3C;
-		width: 350px;
+		width: 300px;
 		text-align: left;
 		/*background-color: #F2F2F2;*/
 		background: url(http://baggercentral.com/static/frontend/Smartwave/porto_child/en_US/images/top-menu-bg.png) top left repeat !important;
@@ -158,8 +162,8 @@
 		filter: brightness(80%);
 	}
 	.productInfo {
-		float: left;
 		padding-left: 20px;
+		margin-left: 45%;
 	}
 	.h1 {
 		margin-top: 0;
@@ -169,10 +173,7 @@
 		font-family: 'Nunito', sans-serif;
 		color: #D11313;
 	}
-	.fr {
-		position:absolute;
-		top: 25px;
-		right: 25px;
+	.productInfo .dw1 img {
 		border-radius: 25px;
 	}
 	.footer {
@@ -182,12 +183,8 @@
 		min-height:500px;
 	}
 	.body {
-		position: relative;
-		background: rgba(63, 70, 87, 0.4);
-		-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 10px 50px, rgba(0, 0, 0, 0.3) 0 10px 40px, rgba(0, 0, 0, 0.3) 0 10px 30px;
 		padding: 25px;
 		border-radius: 25px;
-		max-width: 900px;
 	}
 	.searchBox {
 	    background-color: #82090c !important;
@@ -224,10 +221,17 @@
 		cursor: pointer;
 	}
 	.descWrap {
-		margin-top: 100px;
+		float: left;
 	}
 	.dw1 {
 		width: 100%;
+	}
+	.dw1 h1 {
+		margin-bottom: 5px;
+		padding-bottom: 0;
+	}
+	.dw1 p {
+		margin-top: 5px;
 	}
 	.dw2 {
 		width: 100%;
