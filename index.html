@@ -15,6 +15,13 @@
 		margin: 0;
 		padding: 0;
 		box-sizing: border-box;
+		position: relative;
+	}
+	.body {
+		box-sizing: border-box;
+		width: 1000px;
+		margin: 0 auto;
+		margin-top: 20px;
 	}
 	.header	{
 		background: url(http://baggercentral.com/media/porto/header_bg/default/banner-bg-wide.jpg);
@@ -25,7 +32,7 @@
 	.headerTop {
 		width: 1000px;
 		padding-top: 15px;
-		min-height: 130px;
+		height: 130px;
 		margin: 0 auto;
 	}
 	.logo {
@@ -113,7 +120,10 @@
 	    background: #252B39;
 	    height: 470px;
 	    padding-top: 10px;
-	    border-bottom-right-radius: 10px;
+	    border-bottom-right-radius: 15px;
+	    position: absolute;
+	    top: 190px;
+	    left: 0;
 	}
 	.sideNav {
 		-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 10px 50px, rgba(0, 0, 0, 0.3) 0 10px 40px, rgba(0, 0, 0, 0.3) 0 10px 30px;
@@ -150,8 +160,9 @@
 		-webkit-transition: text 5s;
 		background-color: #818C8C;
 		padding-left: 30px;
-		-webkit-transition: padding 0.5s;
-		-webkit-transition: background-color 0.25s;
+		-webkit-transition: padding 0.75s;
+		-webkit-transition: background-color 0.2s;
+		-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 10px 50px, rgba(0, 0, 0, 0.3) 0 10px 40px, rgba(0, 0, 0, 0.3) 0 10px 30px;
 	}
 	.searchBox {
 	    background-color: #82090c !important;
@@ -186,6 +197,34 @@
 		text-align: center;
 		display: inline-block;
 		cursor: pointer;
+	}
+	.prodimgwrap {
+		float: left;
+		display: inline-block;
+		width: 300px;
+	}
+	.productIMG {
+		width: 300px;
+		-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 10px 50px, rgba(0, 0, 0, 0.3) 0 10px 40px, rgba(0, 0, 0, 0.3) 0 10px 30px;
+	}
+	.h1 {
+		display: inline-block;
+		color: #D11313;
+		float: left;
+		margin: 0;
+		padding: 0;
+		width: 680px;
+		font-size: 18px;
+		margin-left: 10px;
+	}
+	.maker {
+		width:  100%;
+	}
+	.maker img {
+		float: right;
+	}
+	.maker h2 {
+		float: left;
 	}
 
 
@@ -232,21 +271,32 @@
 			</nav>
 		</div>
 	</div>
-	<div class="sideNavWrap">
- 		<nav class="sideNav">
- 			<a class="first" href="http://stores.ebay.com/WanaRyd/Wheels-by-Bike-/_i.html?_fsub=2&_sid=120212033&_trksid=p4634.c0.m322">WHEELS</a>
-			<a href="http://stores.ebay.com/WanaRyd/Bodywork-/_i.html?_fsub=3871076013&_sid=120212033&_trksid=p4634.c0.m322">BODYWORK</a>
-			<a href="http://stores.ebay.com/WanaRyd/Brakes-/_i.html?_fsub=1386765013&_sid=120212033&_trksid=p4634.c0.m322">BRAKES</a>
-			<a href="http://stores.ebay.com/WanaRyd/Covers-Caps-/_i.html?_fsub=3871077013&_sid=120212033&_trksid=p4634.c0.m322">COVERS &amp; CAPS</a>
-			<a href="http://stores.ebay.com/WanaRyd/Exhaust-/_i.html?_fsub=2142120013&_sid=120212033&_trksid=p4634.c0.m322">EXHAUST</a>
-			<a href="http://stores.ebay.com/WanaRyd/Handlebars-Controls-Mirrors-/_i.html?_fsub=3871078013&_sid=120212033&_trksid=p4634.c0.m322">HANDLEBARS &amp; CONTROLS</a>
-			<a href="http://stores.ebay.com/WanaRyd/Intakes-Air-Cleaners-/_i.html?_fsub=3871079013&_sid=120212033&_trksid=p4634.c0.m322">INTAKES &amp; AIR CLEANERS</a>
-			<a href="http://stores.ebay.com/WanaRyd/Lighting-License-Plates-/_i.html?_fsub=3871080013&_sid=120212033&_trksid=p4634.c0.m322">LIGHTING &amp; LICENSE PLATES</a>
-			<a href="http://stores.ebay.com/WanaRyd/Saddlebags-Luggage-/_i.html?_fsub=3871084013&_sid=120212033&_trksid=p4634.c0.m322">SADDLEBAGS &amp; LUGGAGE</a>
-			<a href="http://stores.ebay.com/WanaRyd/Seats-Backrests-/_i.html?_fsub=3871085013&_sid=120212033&_trksid=p4634.c0.m322">SEATS &amp; BACKRESTS</a>
-			<a href="http://stores.ebay.com/WanaRyd/Suspension-/_i.html?_fsub=1386705013&_sid=120212033&_trksid=p4634.c0.m322">SUSPENSION</a>
-			<a class="last" href="http://stores.ebay.com/WanaRyd/Tires-Tire-Repair-/_i.html?_fsub=3871086013&_sid=120212033&_trksid=p4634.c0.m322">TIRES &amp; TIRE REPAIR</a>
- 		</nav>
+
+	<div class="body cf">
+		<div class="sideNavWrap">
+		 		<nav class="sideNav">
+		 			<a class="first" href="http://stores.ebay.com/WanaRyd/Wheels-by-Bike-/_i.html?_fsub=2&_sid=120212033&_trksid=p4634.c0.m322">WHEELS</a>
+				<a href="http://stores.ebay.com/WanaRyd/Bodywork-/_i.html?_fsub=3871076013&_sid=120212033&_trksid=p4634.c0.m322">BODYWORK</a>
+				<a href="http://stores.ebay.com/WanaRyd/Brakes-/_i.html?_fsub=1386765013&_sid=120212033&_trksid=p4634.c0.m322">BRAKES</a>
+				<a href="http://stores.ebay.com/WanaRyd/Covers-Caps-/_i.html?_fsub=3871077013&_sid=120212033&_trksid=p4634.c0.m322">COVERS &amp; CAPS</a>
+				<a href="http://stores.ebay.com/WanaRyd/Exhaust-/_i.html?_fsub=2142120013&_sid=120212033&_trksid=p4634.c0.m322">EXHAUST</a>
+				<a href="http://stores.ebay.com/WanaRyd/Handlebars-Controls-Mirrors-/_i.html?_fsub=3871078013&_sid=120212033&_trksid=p4634.c0.m322">HANDLEBARS &amp; CONTROLS</a>
+				<a href="http://stores.ebay.com/WanaRyd/Intakes-Air-Cleaners-/_i.html?_fsub=3871079013&_sid=120212033&_trksid=p4634.c0.m322">INTAKES &amp; AIR CLEANERS</a>
+				<a href="http://stores.ebay.com/WanaRyd/Lighting-License-Plates-/_i.html?_fsub=3871080013&_sid=120212033&_trksid=p4634.c0.m322">LIGHTING &amp; LICENSE PLATES</a>
+				<a href="http://stores.ebay.com/WanaRyd/Saddlebags-Luggage-/_i.html?_fsub=3871084013&_sid=120212033&_trksid=p4634.c0.m322">SADDLEBAGS &amp; LUGGAGE</a>
+				<a href="http://stores.ebay.com/WanaRyd/Seats-Backrests-/_i.html?_fsub=3871085013&_sid=120212033.2&_trksid=p4634.c0.m322">SEATS &amp; BACKRESTS</a>
+				<a href="http://stores.ebay.com/WanaRyd/Suspension-/_i.html?_fsub=1386705013&_sid=120212033&_trksid=p4634.c0.m322">SUSPENSION</a>
+				<a class="last" href="http://stores.ebay.com/WanaRyd/Tires-Tire-Repair-/_i.html?_fsub=3871086013&_sid=120212033&_trksid=p4634.c0.m322">TIRES &amp; TIRE REPAIR</a>
+		 		</nav>
+		</div>
+		<div class="prodimgwrap">
+			<img class="productIMG" src="http://www.wanaryd.com//images/detailed/53/139054_adrenaline1360790498511c03e2760df.jpg" alt="hi">
+		</div>
+			<h1 class="h1">ADRENALIN CHROME 21" FRONT WHEEL ROTORS TIRE PACKAGE KIT 08-13 HARLEY ABS </h1>
+			<div class="maker">
+				<!-- <h2>hi</h2> -->
+				<img src="http://wanaryd.com/suppliers/wanaryd.png" alt="">
+			</div>
 	</div>
 </body>
 </html>
