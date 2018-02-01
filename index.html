@@ -18,7 +18,7 @@
 	body {
 		margin: 0;
 		padding: 0;
-		background: #333 url(http://andersonsoftworks.com/resources/background.png) repeat;
+		/*background: #333 url(http://andersonsoftworks.com/resources/background.png) repeat;*/
 		color: white;
 	}
 	*{
@@ -150,6 +150,9 @@
 	.dropdown a:hover {
 		background-color: #818C8C;
 	}
+	.dropdown a:hover .hoverA {
+		background:white!important;
+	}
 
 	.dropdown:hover {
 		display: block;
@@ -157,7 +160,7 @@
 	.hoverA:hover + .dropdown {
 		display: block;
 	}
-	.dropdown:hover + .navlink {
+	.dropdown:hover .hoverA {
 		-webkit-filter: brightness(80%);
 		-moz-filter: brightness(80%);
 		-o-filter: brightness(80%);
@@ -176,11 +179,10 @@
 	}
 	.fr {
 		float: right;
-/*		-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 10px 50px, rgba(0, 0, 0, 0.3) 0 10px 40px, rgba(0, 0, 0, 0.3) 0 10px 30px;
-*/		border-radius: 25px;
+		border-radius: 25px;
 	}
 	.footer {
-		display: none;
+		/*display: none;*/
 		margin-top: 50px;
 		width: 100%;
 		min-height:500px;
@@ -191,6 +193,40 @@
 		-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 10px 50px, rgba(0, 0, 0, 0.3) 0 10px 40px, rgba(0, 0, 0, 0.3) 0 10px 30px;
 		padding: 25px;
 		border-radius: 25px;
+	}
+	.searchBox {
+	    background-color: #82090c !important;
+	    padding-top: 0;
+	    padding-bottom: 0;
+	    display: inline-block;
+	    height: 40px;
+	}
+	.searchBox input {
+		    background-color: #82090c !important;
+		    border: none;
+		    line-height: 40px;
+		    color:white;
+		    width: 250px;
+			padding: 0 15px;
+	}
+	.submitBox {
+		display: inline-block;
+		background-color: #82090c !important;
+		height: 40px;
+		border-left: 1px solid #333;
+		padding: 0;
+		position: relative;
+	}
+	.submitBox input {
+		line-height: 40px;
+		background-color: #62090c !important;
+		border: none;
+		padding: 0;
+		color: white;
+		width: 50px;
+		text-align: center;
+		display: inline-block;
+		cursor: pointer;
 	}
 	</style>
 </head>
@@ -204,17 +240,25 @@
 				<form name="Search" method="get" action="https://stores.ebay.com/WanaRyd/_i.html">
 					<table>
 						<tbody>
-							<tr class="searchWrap">
-								<td class="searchBox">
-									<input type="text" id="v4-1" value="" name="_nkw" size="13" maxlength="300">
-								</td>
-								<td class="submitBox">
-									<input type="submit" name="submit" value="Search">
-								</td>
+							<tr class="searchWrap"><!-- 
+								 --><td class="searchBox"><!-- 
+									 --><input style="color: #DDD;" onfocus="inputFocus(this)" onblur="inputBlur(this)" type="text" id="v4-1" value="Search All Products" name="_nkw" size="13" maxlength="300"><!-- 
+								 --></td><!-- 
+								 --><td class="submitBox"><!-- 
+										 --><input type="submit" name="submit" value="Search"><!-- 
+								 --></td>
 							</tr>
 						</tbody>
 					</table>
 				</form>
+				<script>
+					function inputFocus(i){
+					    if(i.value==i.defaultValue){ i.value=""; i.style.color="#FFF"; }
+					}
+					function inputBlur(i){
+					    if(i.value==""){ i.value=i.defaultValue; i.style.color="#DDD"; }
+					}
+				</script>
 			</div>
 
 		</div>
@@ -222,7 +266,7 @@
 			<nav class="mainNav"><!-- 
 				 --><a class="navlink" href="http://stores.ebay.com/WanaRyd">STORE HOME</a><!-- 
 				 --><div>
-				 		<a class="navlink hoverA" href="http://stores.ebay.com/WanaRyd/About-Us.html">ALL PRODUCTS</a>
+				 		<a class="navlink hoverA" href="http://stores.ebay.com/WanaRyd/WanaRyd-/">ALL PRODUCTS</a>
 				 		<nav class="dropdown">
 				 			<a href="http://stores.ebay.com/WanaRyd/Wheels-by-Bike-/_i.html?_fsub=2&_sid=120212033&_trksid=p4634.c0.m322">WHEELS</a>
 							<a href="http://stores.ebay.com/WanaRyd/Bodywork-/_i.html?_fsub=3871076013&_sid=120212033&_trksid=p4634.c0.m322">BODYWORK</a>
@@ -262,7 +306,6 @@
 	</div>
 	<div class="footer">
 		<div style="color: #5e5e5e; font-size: 14px; font-family: Tahoma, Geneva, sans-serif;">
-			<img style="margin-top: 10px; margin-bottom: 0px;" src="https://wanaryd.com/images/eBay-html/item_information.jpg" alt="" width="471" height="33" />
 				<p><img src="https://wanaryd.com/images/dyna-beads.jpg" alt="" width="474" height="81" /></p>
 			<p><a href="mailto:sales@wanaryd.com?subject=eBay Inquiry on wheels"><img src="https://wanaryd.com/images/free-t-shirt.jpg" alt="" width="474" height="81" /></a></p>
 			<p><a href="https://wanaryd.com/about-wanaryd-motorcycle.html"><img src="https://wanaryd.com/images/12-years.jpg" alt="" width="474" height="81" /></a></p>
@@ -277,7 +320,7 @@
 						</span>
 						</p>
 
-						<p>
+						<p style="margin-bottom: 0;">
 						<span style="font-size: small;">
 							Call us at 1-888-926-2793 or 
 							<strong><a href="mailto:sales@wanaryd.com">E-mail Us HERE</a>!</strong>
@@ -286,6 +329,5 @@
 					
 			</div>
 	</div>
-
 </body>
 </html>
