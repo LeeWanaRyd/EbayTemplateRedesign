@@ -48,10 +48,6 @@ display: inline-block;
 .searchForm {
 display: inline-block;
 }
-.searchWrap {
-width: 300px;
-height: 40px;
-}
 .navWrap {
 width: 100%;
 color: white;
@@ -302,9 +298,9 @@ font-family: 'Nunito', sans-serif;
 			position: absolute;
 			font-size: 1em;
 			font-weight: normal;
-			width: 230px;
+			width: 250px;
 			top: -48px;
-			padding: 10px;
+			padding: 0;
 			margin: 0;
 			color: #FFF;
 			background-color: #262C39;
@@ -321,12 +317,13 @@ font-family: 'Nunito', sans-serif;
 		article.tabs section h2 a
 		{
 			display: block;
-			width: 100%;
+			width: 230px;
 			line-height: 1.8em;
 			text-align: center;
 			text-decoration: none;
 			color: inherit;
 			outline: 0 none;
+			padding: 10px;
 		}
 		article.tabs section:target
 		{
@@ -337,16 +334,16 @@ font-family: 'Nunito', sans-serif;
 		article.tabs section:target h2 
 		{
 			color: white;
-			background-color: #3F4656 !important;
+			background-color: #818C8C !important;
 		}
 		article.tabs section p,
 		article.tabs section h2
 		{
-			-webkit-transition: all 500ms ease;
-			-moz-transition: all 500ms ease;
-			-ms-transition: all 500ms ease;
-			-o-transition: all 500ms ease;
-			transition: all 500ms ease;
+			-webkit-transition: all 1000ms ease;
+			-moz-transition: all 1000ms ease;
+			-ms-transition: all 1000ms ease;
+			-o-transition: all 1000ms ease;
+			transition: all 1000ms ease;
 		}
 	</style>
 </head>
@@ -355,19 +352,19 @@ font-family: 'Nunito', sans-serif;
 <div class="headerTop">
 <a href="https://www.wanaryd.com" target="_blank"><img class="logo" src="https://baggercentral.com/media/logo/stores/1/WanaRyd_logo.png" alt=""></a>
 <div class="searchForm">
-<form name="Search" method="get" action="https://stores.ebay.com/WanaRyd/_i.html" >
+<form name="Search" method="get" action="https://stores.ebay.com/WanaRyd/_i.html" target="_blank" >
 <table>
-<tbody>
-<tr class="searchWrap"><!-- 
---><td class="searchBox"><!-- 
---><input style="color: #DDD;" placeholder="Search All Products" type="text" id="v4-1" name="_nkw" size="13" maxlength="300"><!-- 
---></td><!-- 
---><td class="submitBox"><!-- 
---><input type="submit" name="submit" value="Search"><!-- 
---></td>
-</tr>
-</tbody>
-</table>
+						<tbody>
+							<tr class="searchWrap"><!-- 
+								 --><td class="searchBox"><!-- 
+									 --><input style="color: #DDD !important;background-color: #82090c !important;border: none;line-height: 40px;color:white;width: 250px;padding: 0 15px;" placeholder="Search All Products" type="text" id="v4-1" name="_nkw" size="13" maxlength="300"><!-- 
+								 --></td><!-- 
+								 --><td class="submitBox" style="display: inline-block;background-color: #82090c !important;height: 40px;border-left: 1px solid #333;padding: 0;position: relative;"><!-- 
+										 --><input type="submit" name="submit" value="Search" style="line-height: 40px;background-color: #62090c !important;border: none;padding: 0;color: white;width: 50px;text-align: center;display: inline-block;cursor: pointer;"><!-- 
+								 --></td>
+							</tr>
+						</tbody>
+					</table>
 </form>
 </div>
 </div>
