@@ -1,0 +1,68 @@
+/*=====================
+    DELETE THIS
+=====================*/
+body {margin:0;padding:0;}
+/*=====================
+  Site Template Hack
+=====================*/
+#main-content .row {padding: 0 !important;margin: 0 !important;}
+#main-content .row .column{padding: 0 !important;}
+
+/*=====================
+        Global
+=====================*/
+.flex {
+  display: flex;
+}
+.flex-wrapper {
+  font-size: 110%;
+	display: flex;
+	flex-direction: column;
+  width: 100vw;
+}
+.flex-section {
+	width: 100%;
+  min-height: 300px;
+}
+/*=====================
+        Header
+=====================*/
+.flex-header {
+  color: white;
+  height: 350px;
+  background: url(https://wanaryd.com/images/23bike.jpg) no-repeat;
+  background-size: 100%;
+  background-position: 50% 65%;
+}
+
+/*=====================
+      Article Text
+=====================*/
+.hidden-title {
+  display: none;
+}
+.article-text {
+  font-size: 1em;
+}
+
+/*=====================
+        List
+=====================*/
+.flex-item {
+  display: flex;
+  flex-direction: row;
+  min-height: 400px;
+}
+.flex-item:nth-child(odd) {
+  background:darkgrey;
+}
+.article-section:nth-child(odd) {
+  display: flex;
+  flex:1;
+  align-items: center;
+  justify-content: center;
+}
+.article-section:nth-child(2) {
+  flex: 3;
+  background: red;
+}
