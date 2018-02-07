@@ -15,7 +15,7 @@ body {margin:0;padding:0;}
   display: flex;
 }
 .flex-wrapper {
-  font-size: 110%;
+  font-size: 1.5rem;
 	display: flex;
 	flex-direction: column;
   width: 100vw;
