@@ -21,8 +21,16 @@ body {margin:0;padding:0;}
   width: 100vw;
 }
 .flex-section {
-	width: 100%;
+  display: flex;
+	width: 90%;
   min-height: 300px;
+  padding: 0 5%;
+}
+.flex-section:nth-child(even) {
+  background:lightgrey;
+}
+.flex-container {
+  position: relative;
 }
 /*=====================
         Header
@@ -46,23 +54,29 @@ body {margin:0;padding:0;}
 }
 
 /*=====================
-        List
+          List
 =====================*/
-.flex-item {
-  display: flex;
-  flex-direction: row;
-  min-height: 400px;
-}
-.flex-item:nth-child(odd) {
-  background:darkgrey;
-}
-.article-section:nth-child(odd) {
-  display: flex;
-  flex:1;
+
+.list-wrapper {
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-.article-section:nth-child(2) {
-  flex: 3;
-  background: red;
+
+.list-section {
+  width: 90%;
+  text-align:center;
+}
+
+.list-img {
+  width: 100px;
+}
+
+.list-wrapper p {
+  text-align: left;
+}
+.list-wrapper a {
+  display: block;
 }
