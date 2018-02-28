@@ -1,11 +1,21 @@
 <style>
-html, body{
+html. body {
 	margin: 0;
+	padding: 0;
+}
+.mainbox-container {margin: 0 !important;}
+#main-content .helper-container > .row {max-width: 100% !important;}
+#main-content .helper-container > .row .column {padding: 0 !important;}
+#right-col {
+	margin: 0 auto !important;
+	float: none !important;
+	max-width: 1200px;
 }
 .wheel {
 	width: 100%;
 	max-width: 350px;
 	max-height: 350px;
+	border-radius: 45%;
 }
 .wheels {
 	box-sizing: border-box;
@@ -13,9 +23,12 @@ html, body{
 	max-width: 350px;
 	font-family: verdana;
 	padding: 0 10px;
+	display: flex;
+	flex-wrap: wrap;
 }
-.wheels img {
-	border-radius: 45%;
+.wheels p {
+	width:  100%;
+	align-self: flex-end;
 }
 .flex {
 	display: flex;
@@ -33,12 +46,21 @@ html, body{
 .wheelname {
 	font-size: 1.5rem;
 }
-.wheel-wrapper:nth-child(even) {
+.wheel-wrapper:nth-child(2) {
 	background: #3F4657;
-	color: white;
+	color: white !important;
+}
+.wheel-wrapper:nth-child(2) p, .wheel-wrapper:nth-child(2) h1 {
+	color: white !important;
+}
+.wheel-wrapper:nth-child(5) {
+	background: #3F4657;
 }
 .pm1 {
 	background-image: url("https://wanaryd.com/images/Diode-6-small.jpeg");
+}
+.pm2 {
+	background-image: url("https://static1.squarespace.com/static/55896f91e4b0e096ba14d84b/t/55e092b4e4b0db179042f195/1440780987484/ion-bike.jpg?format=1500w");
 }
 .parallax {
 	width: 100vw;
@@ -147,6 +169,7 @@ html, body{
 		<!-- /.wheels -->
 	</div>
 	<!-- /.flex wheel-wrapper -->
+	<div class="parallax pm2"></div>
 	<div class="flex wheel-wrapper">
 		<h1>Starkline</h1>
 		<div class="wheels">
