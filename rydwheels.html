@@ -8,9 +8,11 @@ html, body{
 	max-height: 350px;
 }
 .wheels {
+	box-sizing: border-box;
 	width: 50%;
-	max-width: 400px;
+	max-width: 350px;
 	font-family: verdana;
+	padding: 0 10px;
 }
 .wheels img {
 	border-radius: 45%;
@@ -20,6 +22,9 @@ html, body{
 	flex-wrap: wrap;
 	text-align: center;
 	justify-content: center;
+}
+.wheel-wrapper {
+	padding: 20px 0;
 }
 .wheel-wrapper h1 {
 	width: 100%;
@@ -43,6 +48,25 @@ html, body{
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+.bigimg {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.bigimg img {
+	width: 100%;
+}
+.littleimg{
+	width: 100%;
+	text-align: center;
+}
+.littleimg img {
+	width: 50%;
+	max-width: 600px;
+}
+.externals {
+	/*display: none;*/
 }
 </style>
 <div class="wrapper">
@@ -199,5 +223,13 @@ html, body{
 		<!-- /.wheels -->
 	</div>
 	<!-- /.flex wheel-wrapper -->
-
+	<div class="wheel-wrapper externals">
+		<div class="bigimg">
+			<a href="https://wanaryd.com/diode-chrome-wheel.html"><img src="https://wanaryd.com/images/RYD-wheels-gas-monkey2.jpg" alt="" /></a>
+		</div>
+		<div class="littleimg">
+			<img src="https://wanaryd.com/images/gas%20monkey%20bike%20front.jpg" alt="" /><!-- 
+			 --><img src="https://wanaryd.com/images/gas%20monkey%20bike%20back.jpg" alt="" />
+		</div>
+	</div><!-- /.externals -->
 </div>
