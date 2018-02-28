@@ -1,0 +1,202 @@
+<style>
+html, body{
+	margin: 0;
+}
+.wheel {
+	width: 100%;
+	max-width: 350px;
+	max-height: 350px;
+}
+.wheels {
+	width: 50%;
+	max-width: 400px;
+	font-family: verdana;
+}
+.wheels img {
+	border-radius: 45%;
+}
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+}
+.wheel-wrapper h1 {
+	width: 100%;
+	font-size: 3rem;
+}
+.wheelname {
+	font-size: 1.5rem;
+}
+.wheel-wrapper:nth-child(even) {
+	background: #3F4657;
+	color: white;
+}
+.pm1 {
+	background-image: url("https://wanaryd.com/images/Diode-6-small.jpeg");
+}
+.parallax {
+	width: 100vw;
+	max-width: 100%;
+	height: 700px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+</style>
+<div class="wrapper">
+	<div class="parallax pm1"></div>
+	<div class="flex wheel-wrapper">
+		<h1>Chrome</h1>
+		<div class="wheels">
+			<a href=""><img src="https://static1.squarespace.com/static/55896f91e4b0e096ba14d84b/56fc4bd23c44d8170e64d645/56fc507a60b5e92c76ee0cce/1459376275879/diode-chrome.png?format=1500w" alt="Diode Chrome" class="wheel"></a>
+			<p class="wheelname">Diode</p>
+			<!-- /.wheelname -->
+		</div>
+		<!-- /.wheels -->
+		<div class="wheels">
+			<a href=""><img src="https://static1.squarespace.com/static/55896f91e4b0e096ba14d84b/56fc48db27d4bd42c23bda41/56fc4941ab48de8601ef8ab3/1459374416287/electron+copy.png?format=1000w" alt="Electron Chrome" class="wheel"></a>
+			<p class="wheelname">Electron</p>
+			<!-- /.wheelname -->
+		</div>
+		<!-- /.wheels -->
+		<div class="wheels">
+			<a href=""><img src="https://static1.squarespace.com/static/55896f91e4b0e096ba14d84b/56fc55f8859fd08c7e5422cc/56fc563104426271cb8e6cde/1459377738019/resistor.png?format=1500w" alt="Resistor Chrome" class="wheel"></a>
+			<p class="wheelname">Resistor</p>
+			<!-- /.wheelname -->
+		</div>
+		<!-- /.wheels -->
+		<div class="wheels">
+			<a href=""><img src="https://static1.squarespace.com/static/55896f91e4b0e096ba14d84b/56fc531b01dbaec59893fbcc/56fc539a45bf214e4e6ffd89/1459377073654/kinetic.png?format=1500w" alt="Kinetic Chrome" class="wheel"></a>
+			<p class="wheelname">Kinetic</p>
+			<!-- /.wheelname -->
+		</div>
+		<!-- /.wheels -->
+		<div class="wheels">
+			<a href=""><img src="https://static1.squarespace.com/static/55896f91e4b0e096ba14d84b/55df7c66e4b06c89542cb16e/55e0743ae4b0c1436c8ffbbc/1440773195689/ion-chrome.png?format=1500w" alt="Ion Chrome" class="wheel"></a>
+			<p class="wheelname">Ion</p>
+			<!-- /.wheelname -->
+		</div>
+		<!-- /.wheels -->
+		<div class="wheels">
+			<a href=""><img src="https://static1.squarespace.com/static/55896f91e4b0e096ba14d84b/55d218ffe4b055379930dc0b/55d21a2de4b061cb296a79f1/1439832633804/reactor-chrome.png?format=1500w" alt="reactor-chrome" class="wheel"></a>
+			<p class="wheelname">Reactor</p>
+			<!-- /.wheelname -->
+		</div>
+		<!-- /.wheels -->
+		<div class="wheels">
+			<a href=""><img src="https://static1.squarespace.com/static/55896f91e4b0e096ba14d84b/55df7cdfe4b0b7e884474882/55e07513e4b096c533ef9e96/1440773401534/firstrim+2048+CHR.png?format=1500w" alt="arc-chrome" class="wheel"></a>
+			<p class="wheelname">Arc</p>
+			<!-- /.wheelname -->
+		</div>
+		<!-- /.wheels -->
+		<div class="wheels">
+			<a href=""><img src="https://static1.squarespace.com/static/55896f91e4b0e096ba14d84b/55cb6081e4b03b6dcceb4352/55cb6267e4b00d6bdfd954c5/1439392381290/adrenaline-chrome.png?format=1500w" alt="Adrenaline Chrome" class="wheel"></a>
+			<p class="wheelname">Adrenaline</p>
+			<!-- /.wheelname -->
+		</div>
+		<!-- /.wheels -->
+		<div class="wheels">
+			<a href=""><img src="https://static1.squarespace.com/static/55896f91e4b0e096ba14d84b/55d21ae4e4b0412fa2780f0f/55d21daae4b036f2582f452f/1439833532520/twisted-chrome.png?format=1500w" alt="Twisted Chrome" class="wheel"></a>
+			<p class="wheelname">Twisted</p>
+			<!-- /.wheelname -->
+		</div>
+		<!-- /.wheels -->
+		<div class="wheels">
+			<a href=""><img src="https://static1.squarespace.com/static/55896f91e4b0e096ba14d84b/55d21774e4b01d8a4ee3def4/55d21890e4b06f52f9e619d2/1439832224749/atomic-chrome.png?format=1500w" alt="Atomic" class="wheel"></a>
+			<p class="wheelname">Atomic</p>
+			<!-- /.wheelname -->
+		</div>
+		<!-- /.wheels -->
+		<div class="wheels">
+			<a href=""><img src="https://static1.squarespace.com/static/55896f91e4b0e096ba14d84b/55d21f39e4b070510b20692a/55d22001e4b06e5a70a9fc49/1439834136177/rollin-chrome.png?format=1500w" alt="Rollin" class="wheel"></a>
+			<p class="wheelname">Rollin</p>
+			<!-- /.wheelname -->
+		</div>
+		<!-- /.wheels -->
+		<div class="wheels">
+			<a href=""><img src="https://static1.squarespace.com/static/55896f91e4b0e096ba14d84b/5589908ce4b014dac8d79ecc/55899091e4b06855791a4138/1435078815149/amp-chrome.png?format=1500w" alt="Amp" class="wheel"></a>
+			<p class="wheelname">Amp</p>
+			<!-- /.wheelname -->
+		</div>
+		<!-- /.wheels -->
+	</div>
+	<!-- /.flex wheel-wrapper -->
+	<div class="flex wheel-wrapper">
+		<h1>Starkline</h1>
+		<div class="wheels">
+			<a href=""><img src="https://static1.squarespace.com/static/55896f91e4b0e096ba14d84b/56fc4bd23c44d8170e64d645/56fc514b8259b5ed81d63ccf/1459376476275/diode-starkline.png?format=1500w" alt="Didoe Starkline" class="wheel"></a>
+			<p class="wheelname">Diode</p>
+			<!-- /.wheelname -->
+		</div>
+		<!-- /.wheels -->
+		<div class="wheels">
+			<a href=""><img src="http://wanaryd.com/images/detailed/81/electron-starkline.png" alt="Electron Starkline" class="wheel"></a>
+			<p class="wheelname">Electron</p>
+			<!-- /.wheelname -->
+		</div>
+		<!-- /.wheels -->
+		<div class="wheels">
+			<a href=""><img src="https://wanaryd.com/images/detailed/82/Resistor_starkline.jpg" alt="Resistor Starkline" class="wheel"></a>
+			<p class="wheelname">Resistor</p>
+			<!-- /.wheelname -->
+		</div>
+		<!-- /.wheels -->
+		<div class="wheels">
+			<a href=""><img src="https://static1.squarespace.com/static/55896f91e4b0e096ba14d84b/56fc531b01dbaec59893fbcc/56fc539a45bf214e4e6ffd89/1459377073654/kinetic.png?format=1500w" alt="Kinetic Starkline" class="wheel"></a>
+			<p class="wheelname">Kinetic</p>
+			<!-- /.wheelname -->
+		</div>
+		<!-- /.wheels -->
+		<div class="wheels">
+			<a href=""><img src="https://static1.squarespace.com/static/55896f91e4b0e096ba14d84b/55df7c66e4b06c89542cb16e/55e0743ae4b0c2abdfc23a1b/1440773193266/ion-starkline.png?format=1500w" alt="Ion Starkline" class="wheel"></a>
+			<p class="wheelname">Ion</p>
+			<!-- /.wheelname -->
+		</div>
+		<!-- /.wheels -->
+		<div class="wheels">
+			<a href=""><img src="https://static1.squarespace.com/static/55896f91e4b0e096ba14d84b/55d218ffe4b055379930dc0b/55d21a28e4b06f52f9e623f6/1439832630492/reactor-starkline.png?format=1500w" alt="Reactor-starkline" class="wheel"></a>
+			<p class="wheelname">Reactor</p>
+			<!-- /.wheelname -->
+		</div>
+		<!-- /.wheels -->
+		<div class="wheels">
+			<a href=""><img src="https://static1.squarespace.com/static/55896f91e4b0e096ba14d84b/55df7cdfe4b0b7e884474882/55e07512e4b0903e2fc8877b/1440773398420/firstrim+2048+dual.png?format=1500w" alt="Arc Starkline" class="wheel"></a>
+			<p class="wheelname">Arc</p>
+			<!-- /.wheelname -->
+		</div>
+		<!-- /.wheels -->
+		<div class="wheels">
+			<a href=""><img src="https://static1.squarespace.com/static/55896f91e4b0e096ba14d84b/55cb6081e4b03b6dcceb4352/55cb6267e4b07d949893cbde/1439392378279/adrenaline-starkline.png?format=1500w" alt="Adrenaline Starkline" class="wheel"></a>
+			<p class="wheelname">Adrenaline</p>
+			<!-- /.wheelname -->
+		</div>
+		<!-- /.wheels -->
+		<div class="wheels">
+			<a href=""><img src="https://static1.squarespace.com/static/55896f91e4b0e096ba14d84b/55d21ae4e4b0412fa2780f0f/55d21da9e4b07ede5b86881f/1439833526619/twisted-starkline.png?format=1500w" alt="Twisted starkline" class="wheel"></a>
+			<p class="wheelname">Twisted</p>
+			<!-- /.wheelname -->
+		</div>
+		<!-- /.wheels -->
+		<div class="wheels">
+			<a href=""><img src="https://static1.squarespace.com/static/55896f91e4b0e096ba14d84b/55d21774e4b01d8a4ee3def4/55d2188fe4b0cb42736f60be/1439832229037/atomic-starkline.png?format=1500w" alt="Atomic starkline" class="wheel"></a>
+			<p class="wheelname">Atomic</p>
+			<!-- /.wheelname -->
+		</div>
+		<!-- /.wheels -->
+		<div class="wheels">
+			<a href=""><img src="https://static1.squarespace.com/static/55896f91e4b0e096ba14d84b/55d21f39e4b070510b20692a/55d22001e4b0f26e56cc3721/1439834138860/rollin-starkline.png?format=1500w" alt="Rollin starkline" class="wheel"></a>
+			<p class="wheelname">Rollin</p>
+			<!-- /.wheelname -->
+		</div>
+		<!-- /.wheels -->
+		<div class="wheels">
+			<a href=""><img src="https://static1.squarespace.com/static/55896f91e4b0e096ba14d84b/5589908ce4b014dac8d79ecc/55899095e4b014dac8d79ee9/1435078819511/amp-starkline.png?format=1500w" alt="Amp starkline" class="wheel"></a>
+			<p class="wheelname">Amp</p>
+			<!-- /.wheelname -->
+		</div>
+		<!-- /.wheels -->
+	</div>
+	<!-- /.flex wheel-wrapper -->
+
+</div>
